@@ -1,12 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html> <!--กำหนดประเภทของเอกสาร-->
+<html lang="en"> <!--กำหนดเอกสารHTML-->
+<head>  <!--มีข้อมูลเมตา / ข้อมูลสำหรับเอกสาร-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> <!-- กำหนดหัวเรื่องสำหรับเอกสาร-->
 </head>
-<body>
-    <h1>ประวัติส่วนตัว</h1>
+<body> <!--กำหนดเนื้อหาของเอกสาร-->
+    <h1>ประวัติส่วนตัว</h1> <!--กำหนดหัวเรื่อง HTML ให้เป็นตัวหนามี่ตั้งแต่h1-h6-->
+    <p>Myname is Chatwaroon Boonprakob <strong>Mint</strong></p> <!--พารากราฟ แทรกstrong จะเป็นตัวหนา -->
+    <em>first</em><em>second</em><em>third</em> <!--ตัวเอียงแต่จะติดกัน-->
+    <br> <!--เว้นบรรทัด-->
+    <p>fourth</p><p>fifth</p><p>sixth</p> <!--ตัวหนังสือจะเว้นบรรทัดกัน ไม่ติดกัน-->
+     <img src="https://i.pinimg.com/236x/37/cd/97/37cd971672abc848f81794730b470a15.jpg"> <!--นำURLของภาพมาแปะไว้ตรงscr-->
+    <hr> <!--กำหนดการเปลี่ยนแปลงเฉพาะเรื่องในเนื้อหา จะเป็นเส้นกั้นหน้า-->
+    <h1>Formatting</h1>
+    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. <!--คำย่อหรือตัวย่อควรถูกทำเครื่องหมายด้วย แท็ก<abbr> :-->
+       <br>
+    <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address> <!--แท็กกำหนดข้อมูลที่ติดต่อสำหรับผู้เขียน / เจ้าของเอกสารหรือบทความ
+                ข้อมูลการติดต่ออาจเป็นที่อยู่อีเมล URL ที่อยู่จริงหมายเลขโทรศัพท์หมายเลขอ้างอิงสื่อสังคมออนไลน์ ฯลฯ-->
+     <p>This is normal text - <b>and this is bold text</b>.</p> <!--ทำให้ข้อความบางส่วนเป็นตัวหนา(โดยไม่ทำเครื่องหมายว่าสำคัญ) :--> 
+     <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+      </ul> <!--แยกชื่อผู้ใช้ออกจากการตั้งค่าทิศทางข้อความโดยรอบ-->
+      <bdo dir="rtl">
+        This text will go right-to-left.
+     </bdo> <!--ระบุทิศทางข้อความ:-->
+     <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>  <!--ส่วนที่ยกมาจากแหล่งอื่น:--> 
+        <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p> <!--ข้อความใน<cite>องค์ประกอบที่มักจะแสดงผลในตัวเอียง-->
+         <p>The HTML <samp>button</samp> tag defines a clickable button.</p>
+
+         <p>The CSS <code>background-color</code> property defines the background color of an element.</p> <!--ตัวที่อยู่ในcode จะตังเล็กกว่าตัวที่อยู่ในP-->
+         <p>My favorite color is <del>blue</del> <ins>red</ins>!</p> <!--del จะขีดฆ่า ส่วนinsจะเน้นข้อความขีดข้างล่าง-->
+         <p><dfn>HTMl</dfn> is the standard markup language for creating web pages.</p> <!--พาเรนต์ที่ใกล้ที่สุดของ<dfn>แท็กจะต้องมีคำจำกัดความ -->   
+        <p>You <em>have</em> to hurry up!</p> <!--ในemจะเป็นตัวเอียง-->
+        <p><i>Lorem ipsum</i> is the most popular filler text in history.</p> <!--แทรกiคือตัวเอียง-->
+        <p>Do not forget to buy <mark>milk</mark> today.</p> <!--จะเน้นข้อความ-->
+        <label for="disk_c">Disk usage C:</label>
+        <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+        
+        <label for="disk_d">Disk usage D:</label>
+        <meter id="disk_d" value="0.6">60%</meter> <!--แสดงคล้ายกราฟแท่งแสดงอัตราส่วน-->
+        <hr>
+        <pre>
+            Text in a pre element
+            is displayed in a fixed-width
+            font, and it preserves
+            both spaces and
+            line breaks
+            </pre> <!--จะเว้นวรรคตามที่เรากำหนดเลย-->
+        <hr>
+        <pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre><label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress> <!--<progress>แท็กแสดงให้เห็นถึงความคืบหน้าของงาน คล้ายๆเปอร์เชนของแบต-->
+    <p>WWF's goal is to:
+        <q>Build a future where people live in harmony with nature.</q> <!--แทรกq จะแสดงเครื่องหมาคำพูด-->
+        We hope they succeed.</p>
+        <p><s>My car is blue.</s></p> <!--แทรกsคือขีดฆ่าข้อความที่ไม่ถูกต้อง -->
+        <p>My new car is silver.</p>
+<p>Message from my computer:</p>
+
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+<p>Message from my computer:</p>
+
+<p><samp>File not found.<br>Press F1 to continue</samp></p> <!--ตัวจะเล็กลงจากความเป็นจริง--> 
+<p>This is some normal text.</p>
+<p><small>This is some smaller text.</small></p><!--ข้อความจะเล็กลง-->
+<strong>Strong text</strong> <!--ตัวหนา ข้อความสำคัญ -->
+<p>This text contains <sub>subscript</sub> text.</p> <!--sub ข้อความจะห้องด้านล่าง-->
+<p>This text contains <sup>superscript</sup> text.</p><!--supจะห้อยอยู่ข้างบน-->
+<hr>
+<p>We open at <time>10:00</time> every morning.</p>
+
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+<p>This is a <u>parragraph</u>.</p> <!--ขีดเส้นใต้-->
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p><!--แสดงออกทางคณิตศาสตร์ ภายในเนื้อหาจะแสดงมักจะอยู่ในตัวเอียง-->
+<p>
+    To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.<!--ช้<wbr>องค์ประกอบเพื่อเพิ่มโอกาสในการแบ่งคำ
+  -->
+
+    </p>
     
+
+  
+
+
+                  
+
+
+
+
+        
+
+
+         
+
 </body>
 </html>
